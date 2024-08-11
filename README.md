@@ -5,5 +5,4 @@ Form Request, Blade Components, Datatables and Auth From Laravel-UI has been uti
 
 ## Installation
 
-npm run dev
-php artisan serve
+npm run dev && php artisan serve.
