@@ -15,5 +15,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/', function () {
     return redirect('/home');
 });
-Route::resource('teachers',TeacherController::class);
-Route::resource('students',StudentController::class);
+Route::resource('teachers',TeacherController::class)->middleware('auth');
+Route::resource('students',StudentController::class)->middleware('auth');
